@@ -1,0 +1,26 @@
+# Object files
+*.o
+
+# Libraries
+*.a
+
+# Executables
+*.out
+tmp.out
+
+# Debug Files
+vgcore*
+/test/*
+!test/test_*
+output*
+
+# Temp Files
+*.c~
+*.c#
+
+# Workspace Files
+*.code-workspace
+.vscode
+.gitignore
+
+# Test Files

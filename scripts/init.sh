@@ -6,7 +6,7 @@ if [ $# -eq 0 ]
 fi
 
 make fclean
-sed -i s/tmp.out/$1/g ./Makefile
-sed -i s/tmp.out/$1/g ./.gitignore
+sed -i s/tmp.out/$1/g Makefile
+sed -i s/tmp.out/$1/g .gitignore
 rm README.md
 rm scripts/init.sh
