@@ -10,7 +10,7 @@ TEST_SRC = $(filter-out main.c, $(SRC))
 
 INCLUDE_DIR = .
 
-CFLAGS =  -I$(INCLUDE_DIR) -I./lib/include
+CFLAGS =  -I$(INCLUDE_DIR)
 
 OBJ =	$(SRC:.c=.o)
 
@@ -20,7 +20,7 @@ LIB_PATH =	./lib
 
 all: $(OBJ)
 	@echo -e -n "\033[0;33m"
-	gcc -o $(NAME) $(OBJ) $(CFLAGS) -L$(LIB_PATH) -lmy
+	gcc -o $(NAME) $(OBJ) $(CFLAGS)
 	@tput init
 
 clean:
@@ -40,7 +40,7 @@ re: fclean all
 debug: CFLAGS += -g
 debug:
 	@echo -e -n "\033[0;33m"
-	gcc -o $(NAME) $(SRC) $(CFLAGS) -L$(LIB_PATH) -lmy
+	gcc -o $(NAME) $(SRC) $(CFLAGS)
 	@tput init
 
 # replace
