@@ -47,4 +47,4 @@ debug:
 # @tput init
 # with
 # @echo -e -n "\033[0;37m"
-# if it even causes problems
+# if it ever causes problems
